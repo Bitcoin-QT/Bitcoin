@@ -1,0 +1,63 @@
+Browse the Block Chain
+
+In this example, we retrieve the last 10 block from the Bitcoin block chain and render a summary page. We start with the chain property to get the URL of the latest block. We then use the prev_block_url to load the previous, hence traversing the block chain back block by block.
+
+From the command line, we retrieve the latest block using the curl and json commands:
+
+curl -s https://api.blockcypher.com/v1/btc/main | json latest_url | xargs curl -s
+Here we use the json command to extract the latest_url property from the chain and pass it to curl using xargs (invokes a command passing the stdin parameters). This can be chained further to go one block back:
+
+curl -s https://api.blockcypher.com/v1/btc/main | json latest_url | xargs curl -s | json prev_block_url | xargs curl -s
+We can continue chaining calls, but it quickly gets very long. Here's a short Javascript program which can be run in the browser to do the same thing using JQuery:
+
+		
+// Displays the block, for now we just do an alert to show the block's height.
+function showBlock(block) {
+  alert(block.height);
+}
+
+// Gets the JSON data returned by the previous JQuery.get, parse it and returns a
+// new promise to get the next block.
+function printAndGetNext(block) {
+  showBlock(block);
+  return $.get(block.prev_block_url);
+}
+
+// First gets the blockchain data using JQuery.get, parses it and returns a promise to get
+// the latest block. We queue several then() calls right after to get each block one after
+// another and display them.
+$.get("http://api.blockcypher.com/v1/btc/main").then(function(chain) {
+  return $.get(chain.latest_url);
+}).then(printAndGetNext).then(printAndGetNext).then(printAndGetNext);
+		
+		
+Try me!
+
+The above JQuery.get calls our APIs and utilizes the URLs returned by every call. We allow cross-origin resource sharing which enables requests from your domain.
+
+To improve on the above code, we add more details and a loop to get 10 blocks, instead of 3:
+
+// Displays the block by rendering a div summarizing some of its most important details
+function showBlock(b) {
+  var total = b.total / 100000000
+  $('#10-latest-blocks').before("<div>Block at "+b.height+" transferred "+ total+" in "+b.n_tx+" transactions.</div>");
+}
+
+// Gets the JSON data returned by the previous JQuery.get, parse it and returns a
+// new promise to get the next block.
+function printAndGetNext(block) {
+  showBlock(block);
+  return $.get(block.prev_block_url);
+}
+
+// Gets the blockchain data and parse it, returning a promise to get the latest block
+var initiate = $.get("https://api.blockcypher.com/v1/btc/main").then(function(chain) {
+  return $.get(chain.latest_url);
+});
+
+// We continue by looping on the promise returned above and chaining 10 calls to print
+// the block and get the next one.
+var next = initiate;
+for (var n = 0; n < 10; n++) { next = next.then(printAndGetNext); }
+		
+Try me!
