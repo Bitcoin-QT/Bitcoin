@@ -1,0 +1,38 @@
+{
+  "body": {
+    "key": {
+      "eldest_kid": "01201e3da423f4986f17fe5c2ad2962e9102354a67d2048b00b2114a92f8d03886790a",
+      "host": "keybase.io",
+      "kid": "01201e3da423f4986f17fe5c2ad2962e9102354a67d2048b00b2114a92f8d03886790a",
+      "uid": "d68c20a4012cec4665d5adca0b8a8319",
+      "username": "uvhwuvhw"
+    },
+    "merkle_root": {
+      "ctime": 1649082550,
+      "hash": "02a00695c050c9c6dddc98e4a71de544797578aa26732de978ce75ced83ca1e073f3fa143cfaada05ccb5720565c10d885fbfe60b0aac250f23f00614db85ed6",
+      "hash_meta": "1956dda7587c2e5b8fd4c89150cd41390973a7bfa873f8ede98ba0f1d1d03ef4",
+      "seqno": 22226141
+    },
+    "type": "wallet.stellar",
+    "version": 2,
+    "wallet": {
+      "address": "GATB4BUOUENRGQGQLKJHPVA53BR7U4RW73UEJMMBOIIMHIPJGF5HDCV4",
+      "entropy": "X9PD9Vzx1bJaT19RruhNxm40",
+      "network": "stellar"
+    },
+    "wallet_key": {
+      "kid": "0120261e068ea11b1340d05a9277d41dd863fa7236fee844b1817210c3a1e9317a710a",
+      "reverse_sig": "hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgJh4GjqEbE0DQWpJ31B3YY/pyNv7oRLGBchDDoekxenEKp3BheWxvYWTFBBx7ImJvZHkiOnsia2V5Ijp7ImVsZGVzdF9raWQiOiIwMTIwMWUzZGE0MjNmNDk4NmYxN2ZlNWMyYWQyOTYyZTkxMDIzNTRhNjdkMjA0OGIwMGIyMTE0YTkyZjhkMDM4ODY3OTBhIiwiaG9zdCI6ImtleWJhc2UuaW8iLCJraWQiOiIwMTIwMWUzZGE0MjNmNDk4NmYxN2ZlNWMyYWQyOTYyZTkxMDIzNTRhNjdkMjA0OGIwMGIyMTE0YTkyZjhkMDM4ODY3OTBhIiwidWlkIjoiZDY4YzIwYTQwMTJjZWM0NjY1ZDVhZGNhMGI4YTgzMTkiLCJ1c2VybmFtZSI6InV2aHd1dmh3In0sIm1lcmtsZV9yb290Ijp7ImN0aW1lIjoxNjQ5MDgyNTUwLCJoYXNoIjoiMDJhMDA2OTVjMDUwYzljNmRkZGM5OGU0YTcxZGU1NDQ3OTc1NzhhYTI2NzMyZGU5NzhjZTc1Y2VkODNjYTFlMDczZjNmYTE0M2NmYWFkYTA1Y2NiNTcyMDU2NWMxMGQ4ODVmYmZlNjBiMGFhYzI1MGYyM2YwMDYxNGRiODVlZDYiLCJoYXNoX21ldGEiOiIxOTU2ZGRhNzU4N2MyZTViOGZkNGM4OTE1MGNkNDEzOTA5NzNhN2JmYTg3M2Y4ZWRlOThiYTBmMWQxZDAzZWY0Iiwic2Vxbm8iOjIyMjI2MTQxfSwidHlwZSI6IndhbGxldC5zdGVsbGFyIiwidmVyc2lvbiI6Miwid2FsbGV0Ijp7ImFkZHJlc3MiOiJHQVRCNEJVT1VFTlJHUUdRTEtKSFBWQTUzQlI3VTRSVzczVUVKTU1CT0lJTUhJUEpHRjVIRENWNCIsImVudHJvcHkiOiJYOVBEOVZ6eDFiSmFUMTlScnVoTnhtNDAiLCJuZXR3b3JrIjoic3RlbGxhciJ9LCJ3YWxsZXRfa2V5Ijp7ImtpZCI6IjAxMjAyNjFlMDY4ZWExMWIxMzQwZDA1YTkyNzdkNDFkZDg2M2ZhNzIzNmZlZTg0NGIxODE3MjEwYzNhMWU5MzE3YTcxMGEiLCJyZXZlcnNlX3NpZyI6bnVsbH19LCJjbGllbnQiOnsibmFtZSI6ImtleWJhc2UuaW8gZ28gY2xpZW50IiwidmVyc2lvbiI6IjUuOS4wIn0sImN0aW1lIjoxNjQ5MDgyNTY0LCJleHBpcmVfaW4iOjUwNDU3NjAwMCwiaWdub3JlX2lmX3Vuc3VwcG9ydGVkIjp0cnVlLCJwcmV2IjoiMGJkMGNkNDgzZDM2MmRlMDExMzk3MzUwZDRiOTcxMzExY2ZjZjA0M2Y3Y2I3OWI5MDZiZTI1ZTRlNThjZjMyZSIsInNlcW5vIjo0LCJ0YWciOiJzaWduYXR1cmUifaNzaWfEQFfbX2ttSqB8DEMLib2XivTOh1AGQmJuH+HdqKWWlnEvE0R/Gdk8D8wQkvIHmvCCAyKtpk+CtsS6iM5Vnn2rpAGoc2lnX3R5cGUgpGhhc2iCpHR5cGUIpXZhbHVlxCBZdEkuej7qTpdiV1LCZ6T+fcAZx/7vMSmCH8WijIw1cKN0YWfNAgKndmVyc2lvbgE="
+    }
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "5.9.0"
+  },
+  "ctime": 1649082564,
+  "expire_in": 504576000,
+  "ignore_if_unsupported": true,
+  "prev": "0bd0cd483d362de011397350d4b971311cfcf043f7cb79b906be25e4e58cf32e",
+  "seqno": 4,
+  "tag": "signature"
+}
